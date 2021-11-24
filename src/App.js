@@ -4,7 +4,7 @@ import MatchList from './components/MatchList'
 
 // data
 import matchData from './data/matchData'
-import playerData from './data/playerData'
+// import playerData from './data/playerData'
 
 // helper function
 // import { preparePlayerData, addWinsToPlayers} from './helpers/playerHelpers';
