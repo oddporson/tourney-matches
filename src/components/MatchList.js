@@ -4,12 +4,14 @@ import Match from './Match'
 
 function MatchList(props) {
   const { matchData } = props
-  const oneMatch = matchData[0]
+  // const oneMatch = matchData[0]
+  const parsedMatches = matchData.map(match => <Match {...match}/>)
   return(
     <section className="PlayerList MatchList">
       <h1>Match list</h1>
       {/* Matches will be shown here */}
-      <Match {...oneMatch} />
+      {/* <Match {...oneMatch} /> */}
+      {parsedMatches}
     </section>
   )
 }
