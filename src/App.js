@@ -10,13 +10,9 @@ import playerData from './data/playerData'
 import { preparePlayerData, addWinsToPlayers} from './helpers/playerHelpers';
 
 function App() {
-  // console.log('preparePlayerData', preparePlayerData(playerData))
   const playerDataArray = preparePlayerData(playerData);
-  // console.log('playerDataArray from PlayerList', playerDataArray);
   const parsedPlayerData = addWinsToPlayers(playerDataArray, matchData);
-  // console.log(playerDataArray[0]);
   const playerOne = parsedPlayerData[0]
-  console.log('playerOne', playerOne)
   return (
     <div className="App">
       <h1>
