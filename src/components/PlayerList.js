@@ -1,17 +1,18 @@
 import React from 'react'
 import Player from './Player'
-import matchData from '../data/matchData'
-import playerData from '../data/playerData'
+// import matchData from '../data/matchData'
+// import playerData from '../data/playerData'
 import { preparePlayerData, addWinsToPlayers } from '../helpers/playerHelpers'
 
 // console.log("wru?", preparePlayerData(playerData))
 function PlayerList(props) {
-  const playerDataArray = preparePlayerData(playerData);
-  const parsedPlayerData = addWinsToPlayers(playerDataArray, matchData);
+  // console.log(props.matchData)
+  // console.log(props.playerData);
+  const playerDataArray = preparePlayerData(props.playerData);
+  const parsedPlayerData = addWinsToPlayers(playerDataArray, props.matchData);
   // console.log(playerDataArray[0]);
   const playerOne = parsedPlayerData[0]
-  console.log(playerOne)
-
+  // console.log(playerOne)
   return(
     <section className="PlayerList">
       <h1>Current participating players</h1>

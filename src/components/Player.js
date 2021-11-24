@@ -2,7 +2,7 @@ import React from 'react';
 
 
 function Player (props) {
-  console.log(props)
+  // console.log(props)
   const { firstName, gamerTag, lastName, wins } = props
   return(
     <article className="Player">
