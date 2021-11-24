@@ -37,4 +37,4 @@ const matchData = [
   }
 ]
 
-export default matchData.js
+export default matchData;
